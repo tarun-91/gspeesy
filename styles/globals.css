@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --orange-bg: #DB4437;
+    --dark-bg:   #000000;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body {
+    background-color: #fff !important;
+    font-family: "Nunito", sans-serif !important;
+    font-optical-sizing: auto;
+}
+.bg-orange {
+    background: var(--orange-bg);
+}
+.border-orange {
+    border-color: var(--orange-bg);
+}
+.text-orange {
+    color: var(--orange-bg);
+}
+.hover\:bg-white:hover {
+    color: var(--orange-bg);
+}
+.hover\:bg-orange:hover {
+    background-color: var(--orange-bg) !important;
+}
+.banner-sec {
+    padding-bottom: 120px;
+}
+.banner-sec::after {
+    position: absolute;
+    background: url(../public/images/shape-left.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';    
+    left: 0;
+    width: 330px;
+    height: 684px;
+    top: 88px;
+}
+.banner-sec::before {
+    position: absolute;
+    background: url(../public/images/shape-right.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';    
+    top: 157px;
+    right: 0;
+    width: 285px;
+    height: 684px;
+}
+.apple-svg {
+    margin-top: -5px;
+    margin-right: 5px;
+}
+.banner-btns:hover svg path {
+    fill: var(--orange-bg);
+    transition: all 0.3s;
+}
+.download-btn svg{
+    height: 43px;
+}
+.user-active {
+    flex: 0 0 25%;
+}
+/* .sprints-container {
+    margin-right: 0;
+    margin-left: auto;
+    max-width: calc(((100% - 80rem) / 2) + 80rem);
+    width: 100%;
+}
+.access-login-containe {
+    margin-right: auto;
+    margin-left: 0;
+    max-width: calc(((100% - 80rem) / 2) + 80rem);
+    width: 100%;
+} */
+.effortless-left {
+    padding-left: 5%;
+}
+.sprints-col {
+    flex: 0 0 50%;
+}
+.sprints-left {
+    padding-left: 10%;
+}
